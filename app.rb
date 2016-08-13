@@ -18,3 +18,7 @@ post '/anotar/:jugador' do
   session["tenis"].marcar params["jugador"]
   erb :juego
 end
+
+get '/cargarFacil' do
+  erb :cargar_facil
+end
