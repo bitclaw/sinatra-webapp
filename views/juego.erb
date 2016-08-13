@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1><%="#{session['jugador1']} vs #{session['jugador2']}"%></h1>
+    <h2><%= session["tenis"].marcador %></h2>
+    <form action="/anotar/j1" method="post">
+      <input type="submit" name="score_j1" value="score_j1">
+    </form>
+    <form action="/anotar/j2" method="post">
+      <input type="submit" name="score_j2" value="score_j2">
+    </form>
+  </body>
+</html>
