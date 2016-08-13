@@ -21,9 +21,10 @@ end
 
 get '/cargarFacil' do
   pokemon = Pokemon.new
-  # session["pokemon"] = pokemon.cargarRejillaFacil
-  session[:images] ||= ['images/three/bulbasaur/bulbasaur.jpg']
-  session[:images] ||= ['images/three/ivysaur/ivysaur.jpg']
-  session[:images] ||= ['images/three/venusaur/venusaur.jpg']
+
+  session[:images] << 'images/three/bulbasaur/bulbasaur.jpg'
+  session[:images] << 'images/three/bulbasaur/ivysaur.jpg'
+  session[:images] << 'images/three/bulbasaur/venusaur.jpg'
+
   erb :cargar_facil
 end
