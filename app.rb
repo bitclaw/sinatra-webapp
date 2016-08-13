@@ -1,5 +1,5 @@
 require 'sinatra'
-require './lib/tenis'
+require './lib/pokemon'
 
 enable :sessions
 
@@ -20,5 +20,9 @@ post '/anotar/:jugador' do
 end
 
 get '/cargarFacil' do
+  pokemon = Pokemon.new
+  session["bulbasaur"] = 'images/three/bulbasaur/bulbasaur.jpg'
+  session["ivysaur"] = 'images/three/ivysaur/ivysaur.jpg'
+  session["venusaur"] = 'images/three/venusaur/venusaur.jpg'
   erb :cargar_facil
 end

@@ -1,16 +1,16 @@
 class Pokemon
 
-  require Dir
+  # require Dir
 
   # attr_reader :match
-  pares = []
-  trios = []
+  # pares = []
+  # trios = []
 
   def initialize
-    Dir['/../public/images/two/*'].each do |fname|
-      pretty_print fname
-      pares[] = fname
-    end
+    # Dir['/../public/images/two/*'].each do |fname|
+    #   pretty_print fname
+    #   pares[] = fname
+    # end
     # @puntosJ1 = 0
     # @puntosJ2 = 0
     # @marcador = "#{PUNTOS[@puntosJ1]}-#{PUNTOS[@puntosJ2]}"
